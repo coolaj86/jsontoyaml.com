@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/coolaj86/json2yaml.git"
+    "url": "git://github.com/coolaj86/jsontoyaml.com.git"
   },
-  "author": "AJ ONeal <coolaj86@gmail.com> (http://coolaj86.info/)",
+  "author": "AJ ONeal <coolaj86@gmail.com> (http://coolaj86.com/)",
   "license": "Apache2",
   "bugs": {
-    "url": "https://github.com/coolaj86/json2yaml/issues"
+    "url": "https://github.com/coolaj86/jsontoyaml.com/issues"
   },
   "dependencies": {
     "json2yaml": "~1.0.3"
