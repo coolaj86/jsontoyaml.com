@@ -4,7 +4,16 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-42802552-1', 'jsontoyaml.com');
-ga('send', 'pageview');</script><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="./js/bootstrap.min.js"></script><script src="./js/pakmanaged.min.js"></script></head><body><div class="container"><div class="row"><h2>Convert JSON to YAML Online (and in every language)</h2></div><section class="row"><div class="offset1 span5"><h2>JSON</h2><p>Paste your JSON here</p><textarea rows="20" class="span5 js-json">{
+ga('send', 'pageview');</script><script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="./js/bootstrap.min.js"></script><script src="./js/pakmanaged.min.js"></script></head><body><div class="container"><div class="row"><center><h2>Convert JSON to YAML Online</h2><h3>(and in every language)</h3></center></div><section class="row"><div class="span2"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- YAMLtoJSON Wide Sky -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-8389988710887724"
+     data-ad-slot="1503061440"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div><div class="span8"><div class="row"><div class="span4"><h2>JSON</h2><p>Paste your JSON here</p><textarea rows="20" class="span4 js-json">{
   "foo": "bar",
   "baz": [
     "qux",
@@ -18,8 +27,18 @@ ga('send', 'pageview');</script><script src="//ajax.googleapis.com/ajax/libs/jqu
   "emptyArray": [],
   "emptyObject": {},
   "emptyString": ""
-}</textarea></div><div class="span5"><h2>YML</h2><p>See the YML output here</p><textarea rows="20" class="span5 js-yml">---
-</textarea></div></section><div class="row"><div class="offset2 span4"><button type="button" class="center btn btn-primary btn-large js-convert">Convert JSON to YAML</button></div><div class="offset1 span4"><a href="http://yamltojson.com/">Convert YAML to JSON Online</a></div></div><section><div class="row"><br><div class="page-header"><h1>Converting from JSON to YAML</h1></div></div><div class="row"><div class="span12"><p>Converting JSON to YAML is a two part process.</p><p>First you have to convert a string of JSON into an object in whichever language you're using.
+}</textarea></div><div class="span4"><h2>YML</h2><p>See the YML output here</p><textarea rows="20" class="span4 js-yml">---
+</textarea></div></div><div class="row"><div class="offset1 span3"><button type="button" class="center btn btn-primary btn-large js-convert">Convert JSON to YAML</button></div><div class="offset1 span3"><a href="http://yamltojson.com/">Convert YAML to JSON Online</a></div></div></div><div class="span2"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- YAMLtoJSON -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8389988710887724"
+     data-ad-slot="5793660240"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div></section><section><div class="row"><br><div class="page-header"><h1>Converting from JSON to YAML</h1></div></div><div class="row"><div class="span12"><p>Converting JSON to YAML is a two part process.</p><p>First you have to convert a string of JSON into an object in whichever language you're using.
 This process is referred to as to <strong>parse</strong> or to <strong>deserialize</strong>.</p><p>Next you'll need to convert that object into a YAML string.
 This process is referred to as to <strong>emit</strong>,
 to <strong>serialize</strong>, or to <strong>stringify</strong>.</p><p>Technically speaking, JSON already is YAML since YAML allows for the use
@@ -31,7 +50,7 @@ json2yaml example.json
 # From stdin
 cat example.json | json2yaml
 </pre><ul><li><span>Install </span><a href="http://nodejs.org#download">NodeJS</a></li><li><a href="https://github.com/coolaj86/json2yaml">json2yaml</a></li></ul></div></div></article><article><a name="javascript"></a><div class="row"><div class="span12"><h3>JavaScript</h3><pre>(function () {
-  &quot;use strict&quot;;
+  "use strict";
   
   var YAML = require('json2yaml')
     , json
@@ -39,14 +58,14 @@ cat example.json | json2yaml
     , yml
     ;
     
-  json = '{ &quot;foo&quot;: &quot;bar&quot; }';
+  json = '{ "foo": "bar" }';
   data = JSON.parse(json);
   yml = YAML.stringify(data);
   
   console.log(yml);
 }());
-</pre><ul><li><code>npm install json2yaml</code></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">JSON.parse</a></li><li><a href="https://github.com/coolaj86/json2yaml">YAML.stringify</a></li></ul></div></div></article><article><a name="browser-javascript"></a><div class="row"><div class="span12"><h3>JavaScript (browser only)</h3><pre>&lt;script src=&quot;http://jsontoyaml.com/js/json2yaml.js&quot;&gt;&lt;/script&gt;</pre><pre>(function () {
-  &quot;use strict&quot;;
+</pre><ul><li><code>npm install json2yaml</code></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">JSON.parse</a></li><li><a href="https://github.com/coolaj86/json2yaml">YAML.stringify</a></li></ul></div></div></article><article><a name="browser-javascript"></a><div class="row"><div class="span12"><h3>JavaScript (browser only)</h3><pre>&lt;script src="http://jsontoyaml.com/js/json2yaml.js"&gt;&lt;/script&gt;</pre><pre>(function () {
+  "use strict";
   
   var YAML = window.YAML
     , json
@@ -54,7 +73,7 @@ cat example.json | json2yaml
     , yml
     ;
     
-  json = '{ &quot;foo&quot;: &quot;bar&quot; }';
+  json = '{ "foo": "bar" }';
   data = JSON.parse(json);
   yml = YAML.stringify(data);
   
@@ -63,7 +82,7 @@ cat example.json | json2yaml
 </pre><ul><li><span>Download </span><code><a href="http://jsontoyaml.com/js/json2yaml.js">json2yaml.js</a></code></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">JSON.parse</a></li><li><a href="https://github.com/coolaj86/json2yaml">YAML.stringify</a></li></ul></div></div></article><article><a name="ruby"></a><div class="row"><div class="span12"><h3>Ruby</h3><pre>require 'json'
 require 'yaml'
 
-json = '{ &quot;foo&quot;: &quot;bar&quot; }'
+json = '{ "foo": "bar" }'
 data = JSON.parse(json)
 yml = YAML::dump(data)
 
@@ -71,7 +90,7 @@ puts yml
 </pre><ul><li><code>gem install json</code></li><li><a href="http://www.ruby-doc.org/stdlib-2.0/libdoc/json/rdoc/JSON.html">JSON.parse</a></li><li><a href="http://www.ruby-doc.org/stdlib-2.0/libdoc/yaml/rdoc/YAML.html">YAML::dump</a></li></ul></div></div></article><article><a name="python"></a><div class="row"><div class="span12"><h3>Python</h3><pre>import json
 import yaml
 
-json = '{ &quot;foo&quot;: &quot;bar&quot; }'
+json = '{ "foo": "bar" }'
 data = json.loads(json)
 yml = yaml.dump(data)
 
