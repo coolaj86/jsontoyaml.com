@@ -22,39 +22,50 @@ html(lang="en")
   body
     .container
       .row
-        h2 Convert JSON to YAML Online (and in every language)
+        center
+          h2 Convert JSON to YAML Online
+          h3 (and in every language)
       section.row
-        .offset1.span5
-          h2 JSON
-          //- TODO will need JSONLint
-          p Paste your JSON here
-          textarea.span5.js-json(rows="20").
-            {
-              "foo": "bar",
-              "baz": [
-                "qux",
-                "quxx"
-              ],
-              "corge": null,
-              "grault": 1,
-              "garply": true,
-              "waldo": "false",
-              "fred": "undefined",
-              "emptyArray": [],
-              "emptyObject": {},
-              "emptyString": ""
-            }
-        .span5
-          h2 YML
-          p See the YML output here
-          textarea.span5.js-yml(rows="20").
-            ---
+        .span2
+          include google-ad-1.html
 
-      .row
-        .offset2.span4
-          button.center.btn.btn-primary.btn-large.js-convert(type="button") Convert JSON to YAML
-        .offset1.span4
-          a(href="http://yamltojson.com/") Convert YAML to JSON Online
+        .span8
+          .row
+            .span4
+              h2 JSON
+              //- TODO will need JSONLint
+              p Paste your JSON here
+              textarea.span4.js-json(rows="20").
+                {
+                  "foo": "bar",
+                  "baz": [
+                    "qux",
+                    "quxx"
+                  ],
+                  "corge": null,
+                  "grault": 1,
+                  "garply": true,
+                  "waldo": "false",
+                  "fred": "undefined",
+                  "emptyArray": [],
+                  "emptyObject": {},
+                  "emptyString": ""
+                }
+            .span4
+              h2 YML
+              p See the YML output here
+              textarea.span4.js-yml(rows="20").
+                ---
+
+          .row
+            .offset1.span3
+              button.center.btn.btn-primary.btn-large.js-convert(type="button") Convert JSON to YAML
+            .offset1.span3
+              a(href="http://yamltojson.com/") Convert YAML to JSON Online
+
+        .span2
+          include google-ad-2.html
+
 
       section
         .row
