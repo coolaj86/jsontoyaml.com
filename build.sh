@@ -1,4 +1,5 @@
 #!/bin/bash
+if [ -n "$1" ]; then MSG=$1; else MSG="YOLO"; fi
 set -u
 set -e
 
