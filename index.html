@@ -90,8 +90,8 @@ puts yml
 </pre><ul><li><code>gem install json</code></li><li><a href="http://www.ruby-doc.org/stdlib-2.0/libdoc/json/rdoc/JSON.html">JSON.parse</a></li><li><a href="http://www.ruby-doc.org/stdlib-2.0/libdoc/yaml/rdoc/YAML.html">YAML::dump</a></li></ul></div></div></article><article><a name="python"></a><div class="row"><div class="span12"><h3>Python</h3><pre>import json
 import yaml
 
-json = '{ "foo": "bar" }'
-data = json.loads(json)
+str = '{ "foo": "bar" }'
+data = json.loads(str)
 yml = yaml.safe_dump(data)
 
 print(yml)
