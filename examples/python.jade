@@ -5,8 +5,8 @@
       import json
       import yaml
 
-      json = '{ "foo": "bar" }'
-      data = json.loads(json)
+      str = '{ "foo": "bar" }'
+      data = json.loads(str)
       yml = yaml.safe_dump(data)
 
       print(yml)
