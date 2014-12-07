@@ -1,0 +1,20 @@
+.row
+  .span12
+    h3 Haskell
+    code
+      pre.
+        import           Data.Aeson (decode)
+        import           System.Environment (getArgs)
+        import           Control.Monad (forM_)
+        import           Control.Applicative ((<$>))
+        import qualified Data.ByteString.Lazy.Char8 as BLC
+        import qualified Data.Yaml as Y
+
+        main :: IO ()
+        main = do
+          args <- getArgs
+          forM_ args $ \arg -> do  -- args is a list of JSON files
+            j <- decode <$> BLC.readFile arg
+            case j of 
+              Nothing -> error "Invalid JSON file"
+              Just v -> Y.encodeFile (arg ++ ".yaml") (v :: Y.Value)
