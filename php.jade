@@ -1,0 +1,21 @@
+.row
+  .span12
+    h3 PHP
+    pre.
+      composer require symfony/yaml:2.*
+    pre.
+      &lt;?php
+      require 'vendor/autoload.php';
+
+      use Symfony\Component\Yaml\Yaml;
+
+      $json = '{ "foo": "bar" }';
+      $data = json_decode($json, true);
+      $yml = Yaml::dump($data);
+
+      echo $yml;
+    ul
+      li
+        a(href="http://php.net/manual/en/function.json-decode.php") json_decode
+      li
+        a(href="https://packagist.org/packages/symfony/yaml") symfony/yaml
