@@ -1,0 +1,21 @@
+.row
+  .span12
+    h3 Rust
+    pre.
+        extern crate serde_json as json;
+        extern crate serde_yaml as yaml;
+
+        fn main() {
+            let json_string = r#"{ "foo": "bar" }"#;
+
+            let json: json::Value = json::from_str(json_string).expect("Could not parse JSON");
+            let yaml = yaml::ser::to_string(&json).expect("Could not convert to YAML");
+
+            println!("{}", yaml);
+        }
+
+    ul
+      li
+        a(href="https://crates.io/crates/serde_json") serde_json
+      li
+        a(href="https://crates.io/crates/serde_yaml") serde_yaml
